@@ -10,7 +10,6 @@
 		C0E7EF262B1BB75B008060B5 /* ZenZone_DBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EF252B1BB75B008060B5 /* ZenZone_DBApp.swift */; };
 		C0E7EF2A2B1BB75D008060B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0E7EF292B1BB75D008060B5 /* Assets.xcassets */; };
 		C0E7EF2D2B1BB75D008060B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0E7EF2C2B1BB75D008060B5 /* Preview Assets.xcassets */; };
-		C0E7EF3A2B1BB7CB008060B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EF392B1BB7CB008060B5 /* ContentView.swift */; };
 		C0E7EF562B1BB8CE008060B5 /* FireDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EF552B1BB8CE008060B5 /* FireDBHelper.swift */; };
 		C0E7EF592B1BB91D008060B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EF582B1BB91D008060B5 /* User.swift */; };
 		C0E7EF5C2B1BB9A1008060B5 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EF5B2B1BB9A1008060B5 /* LoginPage.swift */; };
@@ -57,6 +56,17 @@
 		C0E7EFB32B1BC8BE008060B5 /* BreathSoundBody.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0E7EFA92B1BC8BD008060B5 /* BreathSoundBody.mp3 */; };
 		C0E7EFB42B1BC8BE008060B5 /* SittingMeditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0E7EFAA2B1BC8BD008060B5 /* SittingMeditation.mp3 */; };
 		C0E7EFB52B1BC8BE008060B5 /* 4MinuteBodyScan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0E7EFAB2B1BC8BE008060B5 /* 4MinuteBodyScan.mp3 */; };
+		C0E7EFB72B1BC9A2008060B5 /* MeditaionDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EFB62B1BC9A2008060B5 /* MeditaionDataLoader.swift */; };
+		C0E7EFB92B1BC9CC008060B5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EFB82B1BC9CC008060B5 /* LocationManager.swift */; };
+		C0E7EFBB2B1BC9FB008060B5 /* MeditaionSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EFBA2B1BC9FB008060B5 /* MeditaionSession.swift */; };
+		C0E7EFBD2B1BCAF6008060B5 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EFBC2B1BCAF6008060B5 /* HomePage.swift */; };
+		C0E7EFBF2B1BCB1F008060B5 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EFBE2B1BCB1F008060B5 /* ProfilePage.swift */; };
+		C0E7EFC12B1BCBA3008060B5 /* MeditationSessionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EFC02B1BCBA3008060B5 /* MeditationSessionListView.swift */; };
+		C0E7EFC32B1BCBDC008060B5 /* MeditationSessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EFC22B1BCBDC008060B5 /* MeditationSessionDetailView.swift */; };
+		C0E7EFC52B1BCC36008060B5 /* NearbyMeditationSpotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EFC42B1BCC36008060B5 /* NearbyMeditationSpotsView.swift */; };
+		C0E7EFC92B1BCCB0008060B5 /* WellnessTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EFC82B1BCCB0008060B5 /* WellnessTrackingView.swift */; };
+		C0E7EFCB2B1BCD15008060B5 /* CommunitySpotlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EFCA2B1BCD15008060B5 /* CommunitySpotlightView.swift */; };
+		C0E7EFCD2B1BCD30008060B5 /* ExploreSpotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EFCC2B1BCD30008060B5 /* ExploreSpotsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,7 +74,6 @@
 		C0E7EF252B1BB75B008060B5 /* ZenZone_DBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenZone_DBApp.swift; sourceTree = "<group>"; };
 		C0E7EF292B1BB75D008060B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0E7EF2C2B1BB75D008060B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C0E7EF392B1BB7CB008060B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C0E7EF552B1BB8CE008060B5 /* FireDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDBHelper.swift; sourceTree = "<group>"; };
 		C0E7EF582B1BB91D008060B5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C0E7EF5B2B1BB9A1008060B5 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
@@ -84,6 +93,17 @@
 		C0E7EFA92B1BC8BD008060B5 /* BreathSoundBody.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BreathSoundBody.mp3; sourceTree = "<group>"; };
 		C0E7EFAA2B1BC8BD008060B5 /* SittingMeditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SittingMeditation.mp3; sourceTree = "<group>"; };
 		C0E7EFAB2B1BC8BE008060B5 /* 4MinuteBodyScan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4MinuteBodyScan.mp3; sourceTree = "<group>"; };
+		C0E7EFB62B1BC9A2008060B5 /* MeditaionDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditaionDataLoader.swift; sourceTree = "<group>"; };
+		C0E7EFB82B1BC9CC008060B5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C0E7EFBA2B1BC9FB008060B5 /* MeditaionSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditaionSession.swift; sourceTree = "<group>"; };
+		C0E7EFBC2B1BCAF6008060B5 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		C0E7EFBE2B1BCB1F008060B5 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		C0E7EFC02B1BCBA3008060B5 /* MeditationSessionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationSessionListView.swift; sourceTree = "<group>"; };
+		C0E7EFC22B1BCBDC008060B5 /* MeditationSessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationSessionDetailView.swift; sourceTree = "<group>"; };
+		C0E7EFC42B1BCC36008060B5 /* NearbyMeditationSpotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyMeditationSpotsView.swift; sourceTree = "<group>"; };
+		C0E7EFC82B1BCCB0008060B5 /* WellnessTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellnessTrackingView.swift; sourceTree = "<group>"; };
+		C0E7EFCA2B1BCD15008060B5 /* CommunitySpotlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitySpotlightView.swift; sourceTree = "<group>"; };
+		C0E7EFCC2B1BCD30008060B5 /* ExploreSpotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSpotsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +189,8 @@
 			children = (
 				C0E7EF552B1BB8CE008060B5 /* FireDBHelper.swift */,
 				C0E7EF9C2B1BC774008060B5 /* MediaPlayer.swift */,
+				C0E7EFB62B1BC9A2008060B5 /* MeditaionDataLoader.swift */,
+				C0E7EFB82B1BC9CC008060B5 /* LocationManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -177,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				C0E7EF582B1BB91D008060B5 /* User.swift */,
+				C0E7EFBA2B1BC9FB008060B5 /* MeditaionSession.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,7 +211,14 @@
 				C0E7EF5D2B1BB9C3008060B5 /* SignupPage.swift */,
 				C0E7EF5F2B1BB9D7008060B5 /* RootView.swift */,
 				C0E7EF612B1BB9EE008060B5 /* LaunchView.swift */,
-				C0E7EF392B1BB7CB008060B5 /* ContentView.swift */,
+				C0E7EFBC2B1BCAF6008060B5 /* HomePage.swift */,
+				C0E7EFBE2B1BCB1F008060B5 /* ProfilePage.swift */,
+				C0E7EFC02B1BCBA3008060B5 /* MeditationSessionListView.swift */,
+				C0E7EFC22B1BCBDC008060B5 /* MeditationSessionDetailView.swift */,
+				C0E7EFC42B1BCC36008060B5 /* NearbyMeditationSpotsView.swift */,
+				C0E7EFC82B1BCCB0008060B5 /* WellnessTrackingView.swift */,
+				C0E7EFCA2B1BCD15008060B5 /* CommunitySpotlightView.swift */,
+				C0E7EFCC2B1BCD30008060B5 /* ExploreSpotsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -333,12 +363,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0E7EF592B1BB91D008060B5 /* User.swift in Sources */,
+				C0E7EFC12B1BCBA3008060B5 /* MeditationSessionListView.swift in Sources */,
 				C0E7EF622B1BB9EE008060B5 /* LaunchView.swift in Sources */,
-				C0E7EF3A2B1BB7CB008060B5 /* ContentView.swift in Sources */,
+				C0E7EFCD2B1BCD30008060B5 /* ExploreSpotsView.swift in Sources */,
+				C0E7EFC32B1BCBDC008060B5 /* MeditationSessionDetailView.swift in Sources */,
+				C0E7EFB92B1BC9CC008060B5 /* LocationManager.swift in Sources */,
+				C0E7EFCB2B1BCD15008060B5 /* CommunitySpotlightView.swift in Sources */,
 				C0E7EF5E2B1BB9C3008060B5 /* SignupPage.swift in Sources */,
+				C0E7EFC52B1BCC36008060B5 /* NearbyMeditationSpotsView.swift in Sources */,
+				C0E7EFC92B1BCCB0008060B5 /* WellnessTrackingView.swift in Sources */,
 				C0E7EF562B1BB8CE008060B5 /* FireDBHelper.swift in Sources */,
+				C0E7EFBD2B1BCAF6008060B5 /* HomePage.swift in Sources */,
 				C0E7EF602B1BB9D7008060B5 /* RootView.swift in Sources */,
+				C0E7EFBB2B1BC9FB008060B5 /* MeditaionSession.swift in Sources */,
 				C0E7EF5C2B1BB9A1008060B5 /* LoginPage.swift in Sources */,
+				C0E7EFBF2B1BCB1F008060B5 /* ProfilePage.swift in Sources */,
+				C0E7EFB72B1BC9A2008060B5 /* MeditaionDataLoader.swift in Sources */,
 				C0E7EF262B1BB75B008060B5 /* ZenZone_DBApp.swift in Sources */,
 				C0E7EF9D2B1BC774008060B5 /* MediaPlayer.swift in Sources */,
 			);

@@ -21,7 +21,7 @@ struct LaunchView: View {
             case .login:
                 LoginPage(rootView: self.$rootView)
             case .main:
-                ContentView(rootView: self.$rootView).environmentObject(self.fireDBHelper)
+                HomePageView(rootView: self.$rootView).environmentObject(self.fireDBHelper)
             
                 
             }
