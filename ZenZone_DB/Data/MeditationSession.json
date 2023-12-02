@@ -1,0 +1,97 @@
+
+[
+    {
+        "id": "1",
+        "title": "Mountain Meditation",
+        "description": "A guided imagery session to help you visualize serene landscapes.",
+        "duration": 8.13,
+        "category": "Guided Imagery",
+        "audioFileName": "MountainMeditation",
+        "imageName": "meditation_icon"
+    },
+    {
+        "id": "2",
+        "title": "20 Minute Body Scan Meditation",
+        "description": "Body scan meditations invite you to move your focus of attention around the body, being curious about your experience and observing any sensations that you become aware of. ",
+        "duration": 23.12,
+        "category": "Body Scan",
+        "audioFileName": "20MinuteBodyScan",
+        "imageName": "20MinuteBodyScan"
+    },
+    {
+        "id": "3",
+        "title": "Sitting Meditation",
+        "description": "In sitting meditations, the breath frequently serves as the primary point of focus during the practice. Occasionally, they also integrate an awareness of sounds, bodily sensations, thoughts, or emotions.",
+        "duration": 21.03,
+        "category": "Sitting Meditation",
+        "audioFileName": "SittingMeditation",
+        "imageName": "SittingMeditation"
+    },
+    {
+        "id": "4",
+        "title": "10 Minute Bell Meditation",
+        "description": "Sometimes we wish to practice a meditation of our choosing without any guidance. These audio tracks begin and end with the sound of a bell ringing, to orientate you to the practice and to signify the end of the meditation.",
+        "duration": 10.32,
+        "category": "Self Guided Meditation",
+        "audioFileName": "SelfGuidedMeditation",
+        "imageName": "SelfGuidedMeditation"
+    },
+    {
+        "id": "5",
+        "title": "5 Minute Brief Meditation",
+        "description": "This short mindfulness exercises focus on bringing awareness to the process of breathing. As something that we are doing all of the time, watching our breath allows us to come into the present moment and practice being aware.",
+        "duration": 4.05,
+        "category": "Mindfulness Meditation",
+        "audioFileName": "BriefMeditation",
+        "imageName": "BriefMeditation"
+    },
+    {
+        "id": "6",
+        "title": "Compassionate Breath Meditation",
+        "description": "Sitting meditations often use the breath as the central focus of the practice. At times they incorporate awareness of sounds, bodily sensations, thoughts or feelings.",
+        "duration": 11.33,
+        "category": "Sitting Meditation",
+        "audioFileName": "CompassionateBreath",
+        "imageName": "CompassionateBreath"
+    },
+    {
+        "id": "7",
+        "title": "5 Minute Bell Meditation",
+        "description": "Sometimes we wish to practice a meditation of our choosing without any guidance. These audio tracks begin and end with the sound of a bell ringing, to orientate you to the practice and to signify the end of the meditation.",
+        "duration": 5.32,
+        "category": "Self Guided Meditation",
+        "audioFileName": "5MinuteJustBells",
+        "imageName": "SelfGuidedMeditation"
+    },
+    {
+        "id": "8",
+        "title": "20 Minute Bell Meditation",
+        "description": "Sometimes we wish to practice a meditation of our choosing without any guidance. These audio tracks begin and end with the sound of a bell ringing, to orientate you to the practice and to signify the end of the meditation.",
+        "duration": 20.30,
+        "category": "Self Guided Meditation",
+        "audioFileName": "20MinutesBells",
+        "imageName": "SelfGuidedMeditation"
+    },
+    {
+        "id": "9",
+        "title": "Breath, Sound, and Body Meditation",
+        "description": "In sitting meditations, the breath frequently serves as the primary point of focus during the practice. Occasionally, they also integrate an awareness of sounds, bodily sensations, thoughts, or emotions.",
+        "duration": 12.00,
+        "category": "Sitting Meditation",
+        "audioFileName": "BreathSoundBody",
+        "imageName": "SittingMeditation"
+    },
+    {
+        "id": "10",
+        "title": "4 Minute Body Scan Meditation",
+        "description": "Body scan meditations invite you to move your focus of attention around the body, being curious about your experience and observing any sensations that you become aware of.",
+        "duration": 4.01,
+        "category": "Body Scan",
+        "audioFileName": "4MinuteBodyScan",
+        "imageName": "20MinuteBodyScan"
+    }
+    
+    
+
+    
+]
