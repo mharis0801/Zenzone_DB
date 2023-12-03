@@ -12,8 +12,8 @@ struct LoginPage: View {
     
     @Binding var rootView : RootView
     
-    @State private var email : String = "user1@gmail.com"
-    @State private var password : String = "pass1234"
+    @State private var email : String = ""
+    @State private var password : String = ""
     
     var body: some View {
         VStack{

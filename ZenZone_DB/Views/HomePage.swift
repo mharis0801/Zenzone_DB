@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct HomePageView: View {
     @Binding var rootView : RootView
@@ -85,7 +86,14 @@ struct SectionLink<Destination: View>: View {
         
     }
     private func signOut(){
-        self.rootView = .login
+        do{
+            try Auth.auth().signOut()
+            
+            self.rootView = .login
+            
+        }catch let err as NSError{
+            print(#function, "Unable to sign out : \(err)")
+        }
     }
 }
 struct ProfileButton: View {

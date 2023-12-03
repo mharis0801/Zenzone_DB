@@ -44,10 +44,11 @@ class FireDBHelper : ObservableObject{
         do{
             if (loggedInUserEmail != "NA"){
                 try self.db
-                    .collection(self.COLLECTION_AUTH)
-                    .document(loggedInUserEmail)
                     .collection(self.COLLECTION_USERS)
                     .addDocument(from: user)
+                    .collection(self.COLLECTION_AUTH)
+                    .document(loggedInUserEmail)
+                    
             }else{
                 print(#function, "Unable to create User. You must login first.")
             }
@@ -58,12 +59,12 @@ class FireDBHelper : ObservableObject{
     }
     
     func updateUser(indexToUpdate : Int){
-
+        
         
         let documentID = self.userList[indexToUpdate].id!
         let loggedInUserEmail = UserDefaults.standard.string(forKey: "KEY_EMAIL") ?? "NA"
         
-
+        
         
         self.db
             .collection(COLLECTION_AUTH)
@@ -104,10 +105,75 @@ class FireDBHelper : ObservableObject{
                     print(#function, "Document deleted successfully")
                 }
             }
-
+        
     }
-
+    
+    func retrieveAllUser(){
+        let loggedInUserEmail = UserDefaults.standard.string(forKey: "KEY_EMAIL") ?? "NA"
+        
+        do{
+            
+            self.db
+//                .collection(COLLECTION_AUTH)
+                .document(loggedInUserEmail)
+                .collection(self.COLLECTION_USERS)
+                .addSnapshotListener( { (querySnapshot, error) in
+                    
+                    guard let result = querySnapshot else{
+                        print(#function, "No snapshot obtained due to error  : \(error)")
+                        return
+                    }
+                    
+                    print(#function, "result querySnapshot : \(result)")
+                    
+                    
+                    result.documentChanges.forEach{ (docChange) in
+                        do{
+                            
+                            //obtain the Movie object from document
+                            let user = try docChange.document.data(as: User.self)
+                            
+                            print(#function, "user retrieved : id : \(user.id), username: \(user.username)")
+                            
+                            //to check if the document that has changed exists in the current list of users
+                            let matchedIndex = self.userList.firstIndex(where: { ( $0.id?.elementsEqual(docChange.document.documentID))! })
+                            
+                            if docChange.type == .added{
+                                print(#function, "New document is added : \(user.username)")
+                                
+                                if (matchedIndex != nil){
+                                    //the object is already in the list
+                                    //do nothing
+                                }
+                                else{
+                                    self.userList.append(user)
+                                }
+                            }
+                            
+                            if docChange.type == .modified{
+                                print(#function, "Document is updated : \(user.username)")
+                                
+                            }
+                            
+                            if docChange.type == .removed{
+                                print(#function, "Document is removed : \(user.username)")
+                                
+                                //
+                            }
+                            
+                        }catch let err as NSError{
+                            print(#function, "Unable to retrieve documentChange due to error : \(err)")
+                        }
+                    }
+                    
+                })
+            
+        }catch let err as NSError{
+            print(#function, "Unable to retrieve due to error : \(err)")
+        }
+        
     }
+}
 
 
     

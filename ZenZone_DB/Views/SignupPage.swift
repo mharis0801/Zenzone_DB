@@ -106,7 +106,8 @@ struct SignupPage: View {
                 
                 UserDefaults.standard.set(authResult!.user.email, forKey: "KEY_EMAIL")
                 
-                self.rootView = .login
+//                self.rootView = .login
+                dismiss()
                 
                 //optionally - create User document in the Firestore which can have all the profile information
                 //profile screen will allow the user to enter or update profile information
