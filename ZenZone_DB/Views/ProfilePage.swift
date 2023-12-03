@@ -11,8 +11,10 @@
 import SwiftUI
 
 struct ProfilePage: View {
-    @State private var username = "User"
-    @State private var email = "user@example.com"
+//    @EnvironmentObject var dbHelper : FireDBHelper
+    @EnvironmentObject var user: FireDBHelper
+//    @State private var username = "User"
+//    @State private var email = "user@example.com"
     
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
@@ -23,11 +25,22 @@ struct ProfilePage: View {
                 .background(Color.gray.opacity(0.1))
                 .cornerRadius(50)
             
-            Text(username)
-                .font(.title)
+            Text("\(user.user?.firstName ?? "") | \(user.user?.lastName ?? "") ")
             
-            Text(email)
-                .foregroundColor(.gray)
+//            Text("\(user.user?.lastName ?? "")")
+            Text("\(user.user?.age ?? 0)")
+            
+            Text("\(user.user?.username ?? "")")
+            
+            Text("\(user.user?.email ?? "")")
+            
+            
+            Button(action:{
+                user.signOut()
+            }) {
+                Text("Sign Out")
+            }
+      
             
             Spacer()
         }
@@ -36,9 +49,4 @@ struct ProfilePage: View {
     }
     
 
-}
-struct ProfilePage_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfilePage()
-    }
 }

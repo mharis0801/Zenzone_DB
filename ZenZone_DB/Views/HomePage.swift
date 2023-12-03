@@ -9,7 +9,8 @@ import SwiftUI
 import FirebaseAuth
 
 struct HomePageView: View {
-    @Binding var rootView : RootView
+    @EnvironmentObject var user : FireDBHelper
+//    @Binding var rootView : RootView
     var body: some View {
         
             NavigationView {
@@ -19,16 +20,16 @@ struct HomePageView: View {
                         HeaderView()
                         
                         // Meditation Session List View
-                        SectionLink(title: "Meditation Sessions", destination: MeditationSessionListView(), buttonText: "View All Meditation Sessions", rootView: self.$rootView)
+                        SectionLink(title: "Meditation Sessions", destination: MeditationSessionListView(), buttonText: "View All Meditation Sessions")
                         
                         // Wellness Tracking
-                        SectionLink(title: "Your Wellness Stats", destination: WellnessTrackingView(), buttonText: "Track Your Wellness", rootView: self.$rootView)
+                        SectionLink(title: "Your Wellness Stats", destination: WellnessTrackingView(), buttonText: "Track Your Wellness")
                         
                         // Community Spotlight
-                        SectionLink(title: "Community Spotlight", destination: CommunitySpotlightView(), buttonText: "Join the Community", rootView: self.$rootView)
+                        SectionLink(title: "Community Spotlight", destination: CommunitySpotlightView(), buttonText: "Join the Community")
                         
                         // Explore Serene Spots
-                        SectionLink(title: "Explore Serene Spots", destination: ExploreSpotsView(), buttonText: "Explore Serene Spots", rootView: self.$rootView)
+                        SectionLink(title: "Explore Serene Spots", destination: ExploreSpotsView(), buttonText: "Explore Serene Spots")
                     }
                     .padding(.horizontal)
                     
@@ -50,10 +51,11 @@ struct HomePageView: View {
 
 // Reusable Section Link View
 struct SectionLink<Destination: View>: View {
+    @EnvironmentObject var user : FireDBHelper
     var title: String
     var destination: Destination
     var buttonText: String
-    @Binding var rootView : RootView
+//    @Binding var rootView : RootView
 
 
     var body: some View {
@@ -72,31 +74,32 @@ struct SectionLink<Destination: View>: View {
                 .cornerRadius(10)
                 .shadow(radius: 5)
             }
-            .toolbar{
-                ToolbarItem{
-                    Button(action: signOut) {
-                        Label("Add Item", systemImage: "door.right.hand.open")
-                        
-                            .foregroundColor(.red)
-                    }
-
-                }
-            }
+//            .toolbar{
+//                ToolbarItem{
+//                    Button(action: signOut) {
+//                        Label("Add Item", systemImage: "door.right.hand.open")
+//
+//                            .foregroundColor(.red)
+//                    }
+//
+//                }
+//            }
         }
         
     }
-    private func signOut(){
-        do{
-            try Auth.auth().signOut()
-            
-            self.rootView = .login
-            
-        }catch let err as NSError{
-            print(#function, "Unable to sign out : \(err)")
-        }
-    }
+//    private func signOut(){
+//        do{
+//            try Auth.auth().signOut()
+//
+//            self.rootView = .login
+//
+//        }catch let err as NSError{
+//            print(#function, "Unable to sign out : \(err)")
+//        }
+//    }
 }
 struct ProfileButton: View {
+    @EnvironmentObject var user : FireDBHelper
     var body: some View {
         Button(
             action: {
@@ -123,6 +126,7 @@ struct ProfileButton: View {
 //}
 
 struct HeaderView: View {
+    @EnvironmentObject var user : FireDBHelper
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Welcome to ZenZone")
@@ -137,6 +141,7 @@ struct HeaderView: View {
 }
 
 struct SectionView<Content: View>: View {
+    @EnvironmentObject var user : FireDBHelper
     let title: String
     let content: Content
 
@@ -156,6 +161,7 @@ struct SectionView<Content: View>: View {
 }
 
 struct MeditationSessionCard: View {
+    @EnvironmentObject var user : FireDBHelper
     var body: some View {
         VStack {
             Image("meditation")
@@ -173,18 +179,21 @@ struct MeditationSessionCard: View {
 
 // Dummy views to view preview
 struct WellnessTrackingView: View {
+    @EnvironmentObject var user : FireDBHelper
     var body: some View {
         Text("Wellness Tracking View")
     }
 }
 
 struct CommunitySpotlightView: View {
+    @EnvironmentObject var user : FireDBHelper
     var body: some View {
         Text("Community Spotlight View")
     }
 }
 
 struct ExploreSpotsView: View {
+    @EnvironmentObject var user : FireDBHelper
     var body: some View {
         Text("Explore Spots View")
     }

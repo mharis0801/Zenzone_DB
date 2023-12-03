@@ -12,7 +12,6 @@
 		C0E7EF2D2B1BB75D008060B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0E7EF2C2B1BB75D008060B5 /* Preview Assets.xcassets */; };
 		C0E7EF562B1BB8CE008060B5 /* FireDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EF552B1BB8CE008060B5 /* FireDBHelper.swift */; };
 		C0E7EF592B1BB91D008060B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EF582B1BB91D008060B5 /* User.swift */; };
-		C0E7EF5C2B1BB9A1008060B5 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EF5B2B1BB9A1008060B5 /* LoginPage.swift */; };
 		C0E7EF5E2B1BB9C3008060B5 /* SignupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EF5D2B1BB9C3008060B5 /* SignupPage.swift */; };
 		C0E7EF602B1BB9D7008060B5 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EF5F2B1BB9D7008060B5 /* RootView.swift */; };
 		C0E7EF622B1BB9EE008060B5 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7EF612B1BB9EE008060B5 /* LaunchView.swift */; };
@@ -76,7 +75,6 @@
 		C0E7EF2C2B1BB75D008060B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C0E7EF552B1BB8CE008060B5 /* FireDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDBHelper.swift; sourceTree = "<group>"; };
 		C0E7EF582B1BB91D008060B5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		C0E7EF5B2B1BB9A1008060B5 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		C0E7EF5D2B1BB9C3008060B5 /* SignupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPage.swift; sourceTree = "<group>"; };
 		C0E7EF5F2B1BB9D7008060B5 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		C0E7EF612B1BB9EE008060B5 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
@@ -207,7 +205,6 @@
 		C0E7EF5A2B1BB981008060B5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C0E7EF5B2B1BB9A1008060B5 /* LoginPage.swift */,
 				C0E7EF5D2B1BB9C3008060B5 /* SignupPage.swift */,
 				C0E7EF5F2B1BB9D7008060B5 /* RootView.swift */,
 				C0E7EF612B1BB9EE008060B5 /* LaunchView.swift */,
@@ -376,7 +373,6 @@
 				C0E7EFBD2B1BCAF6008060B5 /* HomePage.swift in Sources */,
 				C0E7EF602B1BB9D7008060B5 /* RootView.swift in Sources */,
 				C0E7EFBB2B1BC9FB008060B5 /* MeditaionSession.swift in Sources */,
-				C0E7EF5C2B1BB9A1008060B5 /* LoginPage.swift in Sources */,
 				C0E7EFBF2B1BCB1F008060B5 /* ProfilePage.swift in Sources */,
 				C0E7EFB72B1BC9A2008060B5 /* MeditaionDataLoader.swift in Sources */,
 				C0E7EF262B1BB75B008060B5 /* ZenZone_DBApp.swift in Sources */,

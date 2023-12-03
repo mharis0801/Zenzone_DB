@@ -9,28 +9,23 @@ import SwiftUI
 
 struct LaunchView: View {
     
-    @State private var rootView : RootView = .login
-    let fireDBHelper : FireDBHelper = FireDBHelper.getInstance()
+//    @State private var rootView : RootView = .login
+//    let fireDBHelper : FireDBHelper = FireDBHelper
+    @EnvironmentObject var user : FireDBHelper
     
     var body: some View {
-        NavigationStack{
-            
-            switch self.rootView{
-            case .signup:
-                SignupPage(rootView: self.$rootView).environmentObject(self.fireDBHelper)
-            case .login:
-                LoginPage(rootView: self.$rootView)
-            case .main:
-                HomePageView(rootView: self.$rootView).environmentObject(self.fireDBHelper)
-            
-                
+        NavigationView{
+            if user.userIsAuthenticatedAndSynced{
+                    HomePageView()
+            }else {
+                SignupPage()
+            }
             }
         }
     }
-}
 
-struct LaunchView_Previews: PreviewProvider {
-    static var previews: some View {
-        LaunchView()
-    }
-}
+//struct LaunchView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LaunchView()
+//    }
+//}
